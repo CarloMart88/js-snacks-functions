@@ -1,61 +1,33 @@
-// /* Scrivi una funzione che accetti un'array di stringhe e una lettera e restituisca un array contenente solo le parole che iniziano con quella lettera */
+/* Scrivi una funzione che accetti un'array di stringhe e una lettera e restituisca un array contenente solo le parole che iniziano con quella lettera */
 
-// const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
-
-
-// // Dichiara la funzione qui.
-
-// const startA = (array , element) => {
-
-//   const first = [] 
-
-//   for(let i = 0 ; i < array.length ; i++){
-
-//     if (array[i] [0] === element ){
-
-//       first.push(array[i])
-
-//     }
-
-    
-//   }
-
-//   return first
-
-// }
+const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
-// // Invoca la funzione qui e stampa il risultato in console
+// Dichiara la funzione qui.
 
-// console.log(startA(names , 'A'))
+const startA = (array , element) => {
 
-// //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+  const first = [] 
 
+  for(let i = 0 ; i < array.length ; i++){
 
-// Scrivi una funzione che accetti un array di parole e una lettera, e restituisca un nuovo array con le parole che finiscono con quella lettera.
+    if (array[i] [0] === element ){
 
-// Esempio:
-const words = ["casa", "mare", "sole", "vento", "pioggia", "neve"];
+      first.push(array[i])
 
-const filterByLastLetter = (array , element) => {
-
-  const LastLetter = [] ;
-
-  for (let i = 0 ; i<array.length ; i++) {
-
-    if (array[i][array[i].length - 1] === element ){
-
-
-    LastLetter.push(array[i])
     }
 
+    
   }
 
-  return LastLetter
+  return first
+
 }
 
 
+// Invoca la funzione qui e stampa il risultato in console
 
-console.log(filterByLastLetter(words, 'e')); 
+console.log(startA(names , 'A'))
 
-// Deve restituire: ["mare", "sole", "neve"]
+//Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
