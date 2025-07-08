@@ -5,7 +5,7 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
-const nome = userName => `Ciao ${userName} `
+const nome = userName => `Ciao ${userName}`
 
 
 // Invoca la funzione qui e stampa il risultato in console

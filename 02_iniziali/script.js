@@ -6,8 +6,22 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui.
 
 
+
+const Nomi = (array) => {
+
+  const firstLetter = []
+  for (let i = 0 ; i < array.length ; i++ ) {
+
+    firstLetter.push(array[i][0])
+  }
+ 
+  return firstLetter;
+}
+
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(Nomi(names))
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
