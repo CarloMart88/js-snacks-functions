@@ -11,8 +11,8 @@ const startA = (array , element) => {
 
   for(let i = 0 ; i < array.length ; i++){
 
-    if (array[i] [0] === element ){
-
+    if (array[i][0].toLowerCase() === element.toLowerCase() ){
+      //meglio portare tutto in lower case per gestire un informazione più generica!
       first.push(array[i])
 
     }
