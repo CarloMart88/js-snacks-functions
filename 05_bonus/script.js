@@ -10,7 +10,24 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 
+const time = () => {
 
+  const now = new Date() ; 
+  const hours = now.getHours () ;
+
+  return hours
+
+
+}
+
+if( time() <= 13) {
+  console.log(`Buongiorno ${name} ! ` )
+}
+  else if  ( time() > `13`&&  time() < 17) {
+   console.log(`Buon pomeriggio ${name} ! ` )
+  } else { 
+    console.log(`Buona sera ${name} ! ` )
+}
 // Invoca la funzione qui e stampa il risultato in console
 
 
