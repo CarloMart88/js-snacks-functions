@@ -23,7 +23,7 @@ const time = () => {
 if( time() <= 13) {
   console.log(`Buongiorno ${name} ! ` )
 }
-  else if  ( time() > `13`&&  time() < 17) {
+  else if  ( time() > 13 &&   time() < 17) {
    console.log(`Buon pomeriggio ${name} ! ` )
   } else { 
     console.log(`Buona sera ${name} ! ` )
